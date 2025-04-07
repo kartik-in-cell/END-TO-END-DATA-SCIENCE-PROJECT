@@ -27,18 +27,14 @@ pip install -r requirements.txt
 Step 2: Train the Model
 Run the model training script:
 
-bash
-Copy
-Edit
+
 python train_model.py
 This will generate model.pkl and label_encoder.pkl.
 
 Step 3: Start the Flask API
 Run the API:
 
-bash
-Copy
-Edit
+
 python app.py
 The server will start at http://127.0.0.1:5000/
 
@@ -46,20 +42,14 @@ The server will start at http://127.0.0.1:5000/
 Option 1: Using Python (Recommended)
 Run the test script:
 
-bash
-Copy
-Edit
+
 python test_api.py
 You will see output like:
 
-bash
-Copy
-Edit
+
 Prediction: {'prediction': 'setosa'}
 Option 2: Using Terminal (curl)
-bash
-Copy
-Edit
+
 curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" \
 -d '{"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2}'
 📊 Dataset Info
@@ -77,7 +67,5 @@ Target: Species (setosa, versicolor, virginica)
 🙋 About
 Developed by Kartik Shripatre as part of a Data Science Internship (Task 3 - End-to-End Deployment).
 
-vbnet
-Copy
-Edit
+
 
