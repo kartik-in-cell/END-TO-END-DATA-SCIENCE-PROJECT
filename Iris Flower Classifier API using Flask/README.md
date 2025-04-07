@@ -24,19 +24,22 @@ Make sure you have Python installed. Then install the required libraries:
 
 ```bash
 pip install -r requirements.txt
+---
 ###Step 2: Train the Model
 Run the model training script:
 
 
 python train_model.py
 This will generate model.pkl and label_encoder.pkl.
-
+---
 ###Step 3: Start the Flask API
 Run the API:
 
 
 python app.py
 The server will start at http://127.0.0.1:5000/
+
+---
 
 ##✅ How to Test the API
 ###Option 1: Using Python (Recommended)
